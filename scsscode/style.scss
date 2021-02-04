@@ -1,0 +1,34 @@
+@use 'base';
+@use 'profile';
+
+@mixin sizing($property){
+    padding: $property;
+    border-radius: $property;
+    margin: $property;
+}
+%gencontainer {
+    padding: 15px;
+    border-radius: base.$bradius;
+    background-color: white;
+    border: 1px solid #dadfea;
+    width: 80%;
+}
+
+.column1 {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 517px;
+    background-color: #dadfea;
+}
+.contact p{
+    margin-right: 20px;
+}
+.column2 {
+    display: inline;
+    width: 50%;
+    float: right;
+    clear: both;
+    display: inline-block;
+    background-color: lightcyan;
+}
